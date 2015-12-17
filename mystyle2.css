@@ -23,6 +23,13 @@ li {
 	color: #797676;
 
 }
+.footer p {
+	font-family: georgia;
+}
+
+footer.sansserf {
+	font-family: sans-serif;
+}
 .contacttext {
 		font-family: georgia;
 }
