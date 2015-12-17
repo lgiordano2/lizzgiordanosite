@@ -1,12 +1,47 @@
 
 li {
-	font-family: Garamond Premier Pro, serif;
-	font-size: 16px;
+	font-family: georgia;
+	font-size: 14px;
 	padding-top: 5px;
 	list-style-type: none;
 	color: #797676;
 
 	}
+.xsversion p {
+	font-family: georgia;
+	font-size: 9px;
+	padding-top: 5px;
+	list-style-type: none;
+	color: #797676;
+
+	}
+
+.smversion p {font-family: georgia;
+	font-size: 12px;
+	padding-top: 5px;
+	list-style-type: none;
+	color: #797676;
+
+}
+.contacttext {
+		font-family: georgia;
+}
+}
+.contactpage p {
+	font-family: georgia;
+	
+}
+.smversion { 
+margin-top: 30px;
+}
+
+
+.xsversion {
+	padding: 0px;
+}
+.xsversionlogo {
+	padding: 0px;
+}
 
 ul {
 	padding-left: 0px;
@@ -16,10 +51,37 @@ ul {
 
 width:100%;
 }
+
 a {
 	text-decoration: none;
 }
+.gallerycart {
+	
+}
+.logoLG {
+	padding-left: 0px;
+}
+#header {
 
+}
+.logo2 {
+	width:100%;
+}
+.nologo {
+	margin-top: 10px; 
+}
+.textalignright {
+	text-align: right;
+}
+.alignlt {
+
+}
+.navigation {
+	margin-top: 15px; 
+}
+.gallerynopad {
+	padding-left: 0px;
+}
 a:link {
 	color: #797676;
 
@@ -71,7 +133,7 @@ a:hover {
 }
 
 #footer p {
-	font-size: 11px;
+	font-size: 10px;
 
 }
 #footer a {
@@ -123,9 +185,14 @@ figure.show {
 	position: static;
 
 }
-
+.contacttext {
+	text-align: right;
+}
 #bioimage {
 	width:100%;
+}
+.contactpage {
+	margin-top: 90px;
 }
 .carousel-inner {
 		margin-top: 10px;
@@ -137,9 +204,33 @@ figure.show {
 .slides { padding: 0px;
 
 }
+.textnopd {
+	padding-right:0px;
+}
 .carousel-control {
 	background-image: none !important;
 }
+
+.social {
+	text-align: center;
+		font-family: georgia;
+}
+}
+
+@media all and (min-width:992px) {
+
+li {
+	font-size: 16px;
+}
+
+.social {
+	text-align: center;
+}
+
+
+}
+
+
 
 @media all and (min-width:768px) {
 	#gallery{
@@ -152,7 +243,7 @@ figure.show {
 		margin-top: 10px;
 	}
 	li { 
-		font-size: 25px;
+		font-size: 16px;
 
 	}
 	.carousel-inner {
@@ -160,13 +251,21 @@ figure.show {
 		height: 80%;
 	}
 	#footer p {
-	font-size: 20px;
+	font-size: 12px;
 
 }
 #footer {
 	position: fixed;
 	text-align:right;
 	display: inherit;
+}
+}
+
+@media all and (max-width:768px) {
+
+.navigation {
+	margin-top: 5px; 
+}
 }
 }
 /*
