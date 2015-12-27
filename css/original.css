@@ -43,11 +43,6 @@ margin-top: 30px;
 }
 
 
-.stuck {
-  position:fixed;
-  top:0;
-}
-
 .xsversion {
 	padding: 0px;
 }
@@ -226,6 +221,7 @@ figure.show {
 .social {
 	text-align: center;
 		font-family: georgia;
+}
 }
 
 @media all and (min-width:992px) {
