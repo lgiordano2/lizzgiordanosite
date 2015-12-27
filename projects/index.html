@@ -1,0 +1,40 @@
+{% extends "_base.html" %}
+
+{% block title %}Lizz Giordano's projects{% endblock title %}
+
+{% block content %}
+{% include "gallery.html" %}
+{% include "about.html" %}
+{% include "projects.html" %}
+{% endblock content %}
+
+{% block nav %}
+{% include "_nav.html" %}
+{% endblock nav %}
+
+{% block footer %}
+{% endblock footer %}
+
+{% block css %}
+    {{ super() }}
+    <link href="../css/projects.css" rel="stylesheet">
+{% endblock css %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/shortcuts/sticky.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var sticky = new Waypoint.Sticky({
+                element: $('.navigation-container')[0]
+            });
+            $('.nav-link').tap(function(event) {
+                var top = $(event.target.hash).offset().top - $('.navigation-container').height() - 5;
+                event.preventDefault();
+                $('html,body').animate({scrollTop: top + 'px'}, 750);
+            });
+        });
+    </script>
+{% endblock scripts %}
