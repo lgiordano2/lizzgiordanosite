@@ -20,13 +20,19 @@
     <link href="../css/projects.css" rel="stylesheet">
 {% endblock css %}
 
-{% block scripts %}
-    {{ super() }}
+{% block library_scripts %}
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/shortcuts/sticky.min.js"></script>
+{% endblock library_scripts %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="../js/lazy-carousel.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+            $.mobile.loading().hide();
             var sticky = new Waypoint.Sticky({
                 element: $('.navigation-container')[0]
             });
