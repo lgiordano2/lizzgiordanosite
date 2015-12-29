@@ -1,12 +1,12 @@
 <div class="container-fluid project-container" id="projects">
     {% for project in projects %}
         <div class="row-fluid">
-            <div class="col-md-4 clip-row">
+            <div class="col-offset-md-2 col-md-3 clip-row">
                 {% if project.thumb_url %}
                     <a href="{{ project.url }}"><img src="../images/{{ project.thumb_url }}" class="clip-thumb"></a>
                 {% endif %}
             </div>
-            <div class="col-md-8 clip-row">
+            <div class="col-md-9 clip-row">
                 <h4>{% if project.url %}<a href="{{ project.url }}">{% endif %}{{ project.title }}{% if project.url %}</a>{% endif %}</h4>
                 {% if project.date %}<p class="dateline">{{ project.date }}</p>{% endif %}
                 <p>{{ project.description|safe }}

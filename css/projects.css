@@ -2,6 +2,7 @@
     background-color: #fbfcfc;
 }
 
+
 #intro {
 }
 
@@ -79,8 +80,16 @@ a, a:active, a:hover, a:link, a:visited {
   position: fixed;
   top: 0;
   z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
+.alingrt {
+    text-align: center;
+    font-style: italic;
+    font-family: georgia;
+    margin-bottom: 0px;
 
+}
 /* Gallery */
 #gallery {
     margin: 0px;
@@ -107,9 +116,9 @@ a, a:active, a:hover, a:link, a:visited {
 
 #about-image {
     float: right;
-    width: 25%;
+    width: 50%;
     height: auto;
-    padding: 5px;
+    padding: 10px;
 }
 
 /* Projects */
