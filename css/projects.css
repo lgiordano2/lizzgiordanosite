@@ -13,6 +13,8 @@
 .clip-row {
     height: 250px;
     overflow: visible;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .clip-thumb {
@@ -76,6 +78,10 @@ a, a:active, a:hover, a:link, a:visited {
     text-align: center;
 }
 
+.navigation a.nav-link {
+    line-height: 60px;
+}
+
 .stuck {
   position: fixed;
   top: 0;
@@ -93,6 +99,7 @@ a, a:active, a:hover, a:link, a:visited {
 /* Gallery */
 #gallery {
     margin: 0px;
+    margin-top: 20px;
     padding: 0px;
 }
 
@@ -102,7 +109,9 @@ a, a:active, a:hover, a:link, a:visited {
 
 .item img {
     height: auto;
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel-control {
@@ -112,6 +121,8 @@ a, a:active, a:hover, a:link, a:visited {
 /* About */
 #about-headline {
     text-align: center;
+    font-family: Garamond;
+    font-weight: 600;
 }
 
 #about-image {
@@ -124,6 +135,12 @@ a, a:active, a:hover, a:link, a:visited {
 /* Projects */
 .project-container {
     margin-top: 25px;
+}
+
+.project-hed {
+    font-family: Garamond, serif;
+    margin-top: 0;
+    font-weight: 600;
 }
 
 @media all and (max-width: 991px) {
