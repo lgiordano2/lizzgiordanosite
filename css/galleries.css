@@ -1,0 +1,173 @@
+#ugandagallery, #vegasgallery {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    /*overflow-x: auto;
+    -ms-overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-y: hidden;*/
+    overflow: scroll;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+
+
+#ugandagallery img {
+    height: 420px;    
+}
+
+#ugandatext {
+    width:27%;
+    float:left;
+    white-space: normal;
+    padding: 0 5px;
+    min-width: 100px;
+    font-family: Garamond, 'EB Garamond', serif;
+}
+
+#title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.gallery-title {
+    text-align: center;
+    font-family: Garamond, 'EB Garamond', serif;
+}
+
+#vegasgallery img {
+    height: 420px;    
+}
+
+.kampala-images {
+    display: inline-block;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+#kampala-text > p {
+    padding: 10px;
+}
+
+.kampala-images > img {
+    vertical-align: top;
+    height: 100%;
+    width: auto;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    #gallery {
+        width: 100%;
+        position: absolute;
+        top: 157px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        display:inline;   
+    }
+    
+    #image1 , #image15, #image16, #image21, #image19, #image5, #image8 {    
+        width: 100%;
+        height: auto;
+    }
+    
+    #galleryslide {
+        max-width: 100%;
+    }
+
+    #ugandagallery, #vegasgallery {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    #vegasgallery {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    #vegasgallery img {
+        height: 323px;
+    }
+
+    #ugandagallery img {
+        height: 388px;
+    }
+}
+
+/*landscape*/
+@media all and (min-width: 320px) and (max-width: 767px) and (orientation : landscape){
+    #gallery {
+        width: 78%;
+        height:100%;
+        top:17%;
+        right:0;
+        left:122px;
+    }
+
+    #image1 , #image15, #image16, #image21, #image19, #image5, #image8 {
+        height:150%;
+        width:auto;
+    }
+    
+    #image10, {
+        width: 110%;
+    }
+
+    #image15, #image15, #image21, #image16{
+        width:100%;
+        height: auto;
+    }
+
+    #footer {
+        top:0;
+        right: 3pt;
+        text-align: right;
+    }
+
+     #vegasgallery {
+        height: 328px;
+        position: absolute;
+        top:153px;
+        width: 10000px;
+        overflow: scroll;
+    }
+
+    #ugandagallery {
+        position: absolute;
+        top:148px;
+        width: 12361px;
+        overflow: scroll;
+    }
+
+    #ugandagallery img {
+        height: 368px;
+    }
+
+    #vegasgallery img {
+        height: 328px;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #gallery {
+        width: 100%;
+        position: fixed;
+        top: 82px;
+        left:120px;
+        overflow: scroll;
+    }
+
+    #gallery img {
+        max-width: 88%;
+    }
+
+    .galleryslide1, .galleryslide  {
+        top: 12px;
+        margin: 0px 2.5%;
+    }
+
+    #ugandatext {
+        width: 46%;
+    }
+}
