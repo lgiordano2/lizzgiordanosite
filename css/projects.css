@@ -11,10 +11,11 @@
 }
 
 .clip-row {
-    height: 250px;
+    /*height: 250px;*/
     overflow: visible;
     padding-left: 15px;
     padding-right: 0;
+    margin-top: 40px;
 }
 
 .clip-thumb {
@@ -129,10 +130,7 @@ hr {
     font-family: Garamond, 'EB Garamond', serif;
     font-weight: 600;
     margin-top: 0px;
-}
-
-#project-headline {
-    margin-bottom: 20px;
+    line-height: 30px;
 }
 
 #about-image {
@@ -149,6 +147,12 @@ hr {
 }
 
 #contact, #contact-phone {
+    font-size: 1.2em;
+}
+
+#footer {
+    text-align: center;
+    font-family: Garamond, 'EB Garamond', serif;
     font-size: 1.2em;
 }
 

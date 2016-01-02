@@ -33,6 +33,7 @@
 .gallery-title {
     text-align: center;
     font-family: Garamond, 'EB Garamond', serif;
+    margin-top: 0;
 }
 
 #vegasgallery img {
@@ -43,7 +44,7 @@
     display: inline-block;
     overflow: scroll;
     white-space: nowrap;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 
 #kampala-text > p {
