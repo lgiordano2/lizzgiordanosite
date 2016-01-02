@@ -157,6 +157,10 @@ a, a:active, a:hover, a:link, a:visited {
         margin-left: 25%;
         margin-right: 25%;
     }
+.item img { 
+    width:100%;
+}
+
 }
 
 @media all and (max-width: 768px) {
