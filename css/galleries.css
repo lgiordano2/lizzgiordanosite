@@ -36,17 +36,19 @@
 }
 
 #vegasgallery img {
-    height: 420px;    
+    height: 100px;    
 }
 
 .kampala-images {
     display: inline-block;
     overflow: scroll;
     white-space: nowrap;
+    margin-bottom: 60px;
 }
 
 #kampala-text > p {
     padding: 10px;
+    margin-left: 20px;
 }
 
 .kampala-images > img {

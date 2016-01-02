@@ -94,8 +94,13 @@ a, a:active, a:hover, a:link, a:visited {
     font-style: italic;
     font-family: Garamond, 'EB Garamond', serif;
     margin-bottom: 0px;
-
 }
+
+hr {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 /* Gallery */
 #gallery {
     margin: 0px;
@@ -119,17 +124,32 @@ a, a:active, a:hover, a:link, a:visited {
 }
 
 /* About */
-#about-headline {
+#about-headline, #project-headline {
     text-align: center;
     font-family: Garamond, 'EB Garamond', serif;
     font-weight: 600;
+    margin-top: 0px;
+}
+
+#project-headline {
+    margin-bottom: 20px;
 }
 
 #about-image {
     float: right;
-    width: 50%;
+    width: 56%;
     height: auto;
     padding: 10px;
+}
+
+.about-container {
+    margin-top: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#contact, #contact-phone {
+    font-size: 1.2em;
 }
 
 /* Projects */
@@ -157,9 +177,9 @@ a, a:active, a:hover, a:link, a:visited {
         margin-left: 25%;
         margin-right: 25%;
     }
-.item img { 
-    width:100%;
-}
+    .item img { 
+        width:100%;
+    }
 
 }
 
