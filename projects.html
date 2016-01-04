@@ -2,12 +2,12 @@
     <h2 id="project-headline">{{ project_headline }}</h2>
     {% for project in projects %}
         <div class="row-fluid">
-            <div class="col-md-3 col-md-offset-1 clip-row">
+            <div class="col-sm-4 col-md-3 col-md-offset-1 clip-row">
                 {% if project.thumb_url %}
                     <a target="_blank" href="{{ project.url }}"><img src="../images/{{ project.thumb_url }}" class="clip-thumb"></a>
                 {% endif %}
             </div>
-            <div class="col-md-7 clip-row">
+            <div class="col-sm-7 clip-row">
                 <h3 class="project-hed">{% if project.url %}<a target="_blank" href="{{ project.url }}">{% endif %}{{ project.title }}{% if project.url %}</a>{% endif %}</h3>
                 {% if project.date %}<p class="dateline">{{ project.date }}</p>{% endif %}
                 <p>{{ project.description|safe }}

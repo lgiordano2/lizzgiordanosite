@@ -99,11 +99,12 @@ a, a:active, a:hover, a:link, a:visited {
   padding-top: 20px;
   padding-bottom: 15px;
 }
-.alingrt {
+.contact-info {
     text-align: center;
     font-style: italic;
     font-family: Garamond, 'EB Garamond', serif;
     margin-bottom: 0px;
+    clear: both;
 }
 
 hr {
@@ -196,6 +197,10 @@ hr {
 }
 
 @media all and (max-width: 991px) {
+    .navigation a {
+        font-size: 18px;
+    }
+
     .clip-row {
         height: auto;
     }
@@ -216,6 +221,11 @@ hr {
 }
 
 @media all and (max-width: 768px) {
+    .about-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .logo {
         max-height: 12%;
     }
