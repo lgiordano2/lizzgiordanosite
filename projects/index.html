@@ -65,7 +65,7 @@
                 element: $('.navigation-container')[0]
             });
             $('.nav-link').tap(function(event) {
-                var top = $(event.target.hash).offset().top - $('.navigation-container').height() - 5;
+                var top = $(event.target.hash).offset().top - 2 * $('.navigation').height();
                 event.preventDefault();
                 $('html,body').animate({scrollTop: top + 'px'}, 750);
             });
