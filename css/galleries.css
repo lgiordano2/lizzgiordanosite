@@ -11,6 +11,9 @@
     margin-left: 5px;
 }
 
+.gallery-container {
+    overflow: hidden;
+}
 
 #ugandagallery img {
     height: 420px;    
