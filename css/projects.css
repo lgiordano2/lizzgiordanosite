@@ -54,16 +54,12 @@ a, a:active, a:hover, a:link, a:visited {
 
 .navigation-container {
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
     background-color: #fff;
-    border-bottom: 1px solid #eee;
     z-index: 50;
-    -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.3);
-       -moz-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.3);
 }
 
 .navigation {
