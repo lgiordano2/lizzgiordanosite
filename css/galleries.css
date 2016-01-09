@@ -1,14 +1,6 @@
-#vegasgallery {
-    width: 100%;
-    margin-top: 20px;
-    display: inline-block;
-    overflow: scroll;
-    margin-left: 5px;
-    text-align: center;
-}
-
 .gallery-container {
-    overflow: hidden;
+    /*overflow: hidden;*/
+    text-align: center;
 }
 
 #ugandagallery img {
@@ -16,8 +8,8 @@
 }
 
 #ugandatext {
-    width:27%;
-    float:left;
+    width: 27%;
+    float: left;
     white-space: normal;
     padding: 0 5px;
     min-width: 100px;
@@ -30,14 +22,17 @@
 }
 
 .gallery-title {
-    text-align: center;
     font-family: Garamond, 'EB Garamond', serif;
     margin-top: 0;
 }
 
+.vegas .gallery-title {
+    text-align: center;
+}
+
 #vegasgallery img {
-    height: 250px;
-    padding: 3px;
+    width: 24%;
+    padding: 1%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -47,15 +42,65 @@
     overflow: scroll;
     white-space: nowrap;
     margin-bottom: 60px;
+    padding-left: 0;
 }
 
-#kampala-text > p {
+#kampala-text > p, #kampala-text > h2 {
     padding: 10px;
     margin-left: 20px;
+    padding-right: 2px;
 }
 
 .kampala-images > img {
     vertical-align: top;
     height: 100%;
     width: auto;
+}
+
+@media all and (max-width: 991px) {
+    .kampala-images > img {
+        vertical-align: top;
+        height: 80%;
+        width: auto;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #about-image {
+        width: 55%;
+        padding: 10px 0px 10px 10px;
+    }
+
+    .col-xs-12 {
+        padding: 0px;
+    }
+
+    .container-fluid {
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #kampala-text > p, #kampala-text > h2 {
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
+    }
+
+    .kampala {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .vegas {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #vegasgallery img {
+        width: 48%;
+        padding: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

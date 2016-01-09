@@ -2,6 +2,8 @@ body {
     overflow-x: hidden;
 }
 
+* { outline: none; }
+
 #body {
     background-color: #fbfcfc;
 }
@@ -20,6 +22,10 @@ body {
     padding-left: 15px;
     padding-right: 0;
     margin-top: 40px;
+}
+
+.thumb-col {
+    padding-left: 0;
 }
 
 .clip-thumb {
@@ -214,6 +220,10 @@ hr {
         width:100%;
     }
 
+    hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -242,5 +252,25 @@ hr {
     .navigation-container {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .clip-row {
+        margin-top: 10px;
+        padding-left: 0;
+    }
+
+    .thumb-col {
+        margin-top: 40px;
+    }
+
+    .project-separator {
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
     }
 }
