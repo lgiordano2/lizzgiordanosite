@@ -127,7 +127,7 @@ hr {
 }
 
 .item img {
-   height: 100%;
+  
     margin-left: auto;
     margin-right: auto;
     padding-top: 5px;
@@ -216,7 +216,7 @@ hr {
         margin-right: 25%;
     }
     .item img { 
-        width:100%;
+      
     }
 
     hr {
@@ -272,4 +272,8 @@ hr {
         margin-right: auto;
         width: 30%;
     }
+    .item img {
+  
+ 
+}
 }
