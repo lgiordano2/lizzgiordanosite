@@ -95,12 +95,15 @@ a, a:active, a:hover, a:link, a:visited {
 }
 
 .stuck {
-  position: fixed;
-  top: 0;
-  z-index: 50;
-  padding-top: 20px;
-  padding-bottom: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
+
 .contact-info {
     text-align: center;
     font-style: italic;
@@ -127,7 +130,6 @@ hr {
 }
 
 .item img {
-  
     margin-left: auto;
     margin-right: auto;
     padding-top: 5px;
@@ -141,9 +143,11 @@ hr {
     position: absolute;
     top: 49%;
     z-index: 20;
-    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: rgba(255, 255, 255, 0.5);*/
     padding: 2px;
     cursor: pointer;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 15px #fff;
 }
 
 .slick-arrow.gallery-left {
@@ -152,6 +156,10 @@ hr {
 
 .slick-arrow.gallery-right {
     right: 5%;
+}
+
+.main-gallery {
+    /*height: 80%;*/
 }
 
 /* About */
@@ -216,8 +224,8 @@ hr {
         margin-right: 25%;
     }
     .item img { 
-        width:100%;
-    height:100%;
+        width: 100%;
+        height: 100%;
     }
 
     hr {
@@ -226,7 +234,7 @@ hr {
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     .about-container {
         padding-left: 0;
         padding-right: 0;
@@ -241,7 +249,7 @@ hr {
     }
 
     .navigation a {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .navigation div {
@@ -273,9 +281,21 @@ hr {
         margin-right: auto;
         width: 30%;
     }
-    .item img {
-    width:100%;
-    height:100%;
 
+    .item img {
+        width: 100%;
+        height: 100%;
+    }
 }
+
+@media all and (max-width: 660px) {
+    .navigation a {
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .navigation a {
+        font-size: 10px;
+    }
 }

@@ -67,7 +67,7 @@
                 element: $('.navigation-container')[0]
             });
             $('.nav-link').tap(function(event) {
-                var top = $(event.target.hash).offset().top - 2 * $('.navigation-container').height();
+                var top = $(event.currentTarget.hash).offset().top - 2 * $('.navigation-container').height();
                 event.preventDefault();
                 $('html,body').animate({scrollTop: top + 'px'}, 750);
             });
@@ -77,6 +77,7 @@
                 slidesToShow: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
+                adaptiveHeight: true,
                 fade: true,
                 cssEase: 'linear',
                 arrows: true,
