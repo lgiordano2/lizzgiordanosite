@@ -53,6 +53,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/shortcuts/sticky.min.js"></script>
     <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 {% endblock library_scripts %}
@@ -72,7 +73,7 @@
                 $('html,body').animate({scrollTop: top + 'px'}, 750);
             });
             $('.main-gallery').slick({
-                lazyLoad: 'ondemand',
+                lazyLoad: 'progressive',
                 infinite: true,
                 slidesToShow: 1,
                 autoplay: true,
@@ -85,6 +86,10 @@
                 nextArrow: $('#next-arrow-tmpl').html()
             });
             $("img").unveil();
+            console.log(.7 * $(window).height());
+            _.each($('.item img'), function(galleryImg) {
+                console.log(galleryImg.height);
+            });
             var height = $('#kampala-text').height();
             if ($(window).width() < $(window).height()) {
                 height *= 0.7;
@@ -93,6 +98,13 @@
                 'fadeDuration': 300
             });
             $('.kampala-images > img').css({'height': height + 'px'});
+            $('#gallery').tap(function(e) {
+                if (e.clientX <= $(window).width()/2) {
+                    $('.main-gallery').slick('slickPrev');
+                } else {
+                    $('.main-gallery').slick('slickNext');
+                }
+            });
         });
     </script>
     <script>

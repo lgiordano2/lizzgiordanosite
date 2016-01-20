@@ -129,10 +129,30 @@ hr {
     padding: 0px;
 }
 
+.item {
+    /*white-space: nowrap;
+    text-align: center;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-track {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .item img {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    height: 70%;
+    vertical-align: middle;
+    max-height: 675px;
 }
 
 .carousel-control {
@@ -147,7 +167,8 @@ hr {
     padding: 2px;
     cursor: pointer;
     font-size: 1.5em;
-    text-shadow: 0px 0px 15px #fff;
+    text-shadow: 0px 0px 15px #000;
+    color: #fbfcfc;
 }
 
 .slick-arrow.gallery-left {
@@ -158,8 +179,8 @@ hr {
     right: 5%;
 }
 
-.main-gallery {
-    /*height: 80%;*/
+.main-gallery > div {
+    height: 80% !important;
 }
 
 /* About */
