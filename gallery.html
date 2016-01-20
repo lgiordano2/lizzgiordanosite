@@ -4,7 +4,8 @@
             <div class="main-gallery">
                 {% for image in galleryimages %}
                     <div class="item">
-                        <img class="gallery-image" data-lazy="../images/indexgallery/{{ image.path }}" alt="{{ image.alt }}">
+                        <!-- To re-enable lazy loading, change src to data-lazy, re-enable in JS -->
+                        <img class="gallery-image" src="../images/indexgallery/{{ image.path }}" alt="{{ image.alt }}">
                     </div>
                 {% endfor %}
             </div>
