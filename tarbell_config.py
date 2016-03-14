@@ -34,7 +34,7 @@ S3_BUCKETS = {
     # then use tarbell publish mytarget to publish to it
     
     "production": "lizzgiordano.com/",
-    "staging": "beta.lizzgiordano.com/",
+    "staging": "beta.lizzgiordano.com",
 }
 
 # Default template variables
